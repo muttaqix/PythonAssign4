@@ -1,10 +1,24 @@
+import json
+
 phonebook = {
     'John': ('209 Trafalgar Road', '905-666-7777'),
     'Rosie': ('1439 Trafalgar Road', '487-423-7721'),
 }
+phonebookJson = {}
 
-with open("SpeedDial1.txt", "w") as file:
-    for contact in phonebook.values():
-        phone_number = contact[1]
-        file.write(phone_number + "\n")
+for name in phonebook:
+    address, phone = phonebook[name]  
+    phonebookJson[name] = [address, phone]  
+
+with open("Speeddial2.json", "w") as file:
+    json.dump(phonebookJson, file, indent=4)
+
+with open("Speeddial2.json", "r") as file:
+    loaded_phonebook = json.load(file)
+
+for name, info in loaded_phonebook.items():
+    address = info[0]  
+    phone = info[1]    
+    print(f"Name: {name}\nAddress: {address}\nPhone: {phone}\n")
+
 
