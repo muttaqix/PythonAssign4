@@ -14,9 +14,9 @@ with open("Speeddial2.json", "w") as file:
     json.dump(phonebookJson, file, indent=4)
 
 with open("Speeddial2.json", "r") as file:
-    loaded_phonebook = json.load(file)
+    phonebook = json.load(file)
 
-for name, info in loaded_phonebook.items():
+for name, info in phonebook.items():
     address = info[0]  
     phone = info[1]    
     print(f"Name: {name}\nAddress: {address}\nPhone: {phone}\n")
