@@ -1,0 +1,7 @@
+['muttaqi', 'lkj', '12423']
+['muttaqix', 'lkj', 'k']
+['g', 'r', 'r']
+['wg', 'sdg', '@%@']
+['dgsdg', '234', '324']
+['muttaqi', '123456', '123.4124']
+['& C:/Users/mutta/AppData/Local/Programs/Python/Python313/python.exe c:/Users/mutta/Desktop/PythonPrograms/Assignment4/Question4.py', 'muttaqi', '123456']
